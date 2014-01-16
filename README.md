@@ -1,8 +1,8 @@
 [![Fine Uploader](http://fineuploader.com/img/FineUploader_logo.png)](http://fineuploader.com/)
 
-Version: 3.8.2 (Released August 30, 2013)
+Version: 4.2.0 (Released January 15, 2014)
 
-[![Build Status](https://www.travis-ci.org/Widen/fine-uploader.png?branch=master)](https://www.travis-ci.org/Widen/fine-uploader) | [![Selenium Test Status](https://saucelabs.com/buildstatus/fineuploader)](https://saucelabs.com/u/fineuploader) | [![Semver badge](http://calm-shore-6115.herokuapp.com/?label=SemVer&value=2.0.0&color=green)](http://semver.org/spec/v2.0.0.html)
+[![Build Status](https://travis-ci.org/Widen/fine-uploader.png?branch=master)](https://travis-ci.org/Widen/fine-uploader) | [![Semver badge](http://calm-shore-6115.herokuapp.com/?label=SemVer&value=2.0.0&color=green)](http://semver.org/spec/v2.0.0.html)
 
 [**Download**](http://fineuploader.com/downloads.html) |
 [**Documentation**](http://docs.fineuploader.com) |

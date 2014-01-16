@@ -1,16 +1,16 @@
 /*!
- * Fine Uploader
- *
- * Copyright 2013, Widen Enterprises, Inc. info@fineuploader.com
- *
- * Version: 3.8.2
- *
- * Homepage: http://fineuploader.com
- *
- * Repository: git://github.com/Widen/fine-uploader.git
- *
- * Licensed under GNU GPL v3, see LICENSE
- */ 
+* Fine Uploader
+*
+* Copyright 2013, Widen Enterprises, Inc. info@fineuploader.com
+*
+* Version: 4.2.0
+*
+* Homepage: http://fineuploader.com
+*
+* Repository: git://github.com/Widen/fine-uploader.git
+*
+* Licensed under GNU GPL v3, see LICENSE
+*/ 
 
 
 .qq-uploader {
@@ -74,8 +74,11 @@
     font-size: 16px;
     background-color: #FFF0BD;
 }
-.qq-upload-file, .qq-upload-spinner, .qq-upload-size, .qq-upload-cancel, .qq-upload-retry, .qq-upload-failed-text, .qq-upload-finished, .qq-upload-delete {
+.qq-upload-file, .qq-upload-spinner, .qq-upload-size,
+.qq-upload-cancel, .qq-upload-retry, .qq-upload-failed-text,
+.qq-upload-delete, .qq-upload-pause, .qq-upload-continue {
     margin-right: 12px;
+    display: inline;
 }
 .qq-upload-file {
 }
@@ -87,7 +90,7 @@
     vertical-align: text-bottom;
 }
 .qq-drop-processing {
-    display: none;
+    display: block;
 }
 .qq-drop-processing-spinner {
     display: inline-block;
@@ -96,23 +99,21 @@
     height: 24px;
     vertical-align: text-bottom;
 }
-.qq-upload-finished {
-    display:none;
-    width:15px;
-    height:15px;
-    vertical-align:text-bottom;
+
+.qq-upload-delete, .qq-upload-pause, .qq-upload-continue {
+    display: inline;
 }
-.qq-upload-retry, .qq-upload-delete {
-    display: none;
+
+.qq-upload-retry, .qq-upload-delete, .qq-upload-cancel,
+.qq-upload-pause, .qq-upload-continue {
     color: #000000;
 }
-.qq-upload-cancel, .qq-upload-delete {
-	color: #000000;
-}
+
 .qq-upload-retryable .qq-upload-retry {
     display: inline;
 }
-.qq-upload-size, .qq-upload-cancel, .qq-upload-retry, .qq-upload-delete {
+.qq-upload-size, .qq-upload-cancel, .qq-upload-retry,
+.qq-upload-delete, .qq-upload-pause, .qq-upload-continue {
     font-size: 12px;
     font-weight: normal;
 }
@@ -143,6 +144,7 @@
     color: #FFFFFF;
 }
 .qq-progress-bar {
+    display: block;
     background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(50%,rgba(41,137,216,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -153,7 +155,6 @@
     height: 15px;
     border-radius: 6px;
     margin-bottom: 3px;
-    display: none;
 }
 
 INPUT.qq-edit-filename {
@@ -197,4 +198,8 @@ INPUT.qq-edit-filename.qq-editing ~ .qq-upload-cancel {
     display: none;
 }
 
-/*! 2013-11-25 */
+.qq-hide {
+    display: none;
+}
+
+/*! 2014-01-16 */
